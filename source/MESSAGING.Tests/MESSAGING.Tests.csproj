@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MESSAGING.Events\MESSAGING.Events.csproj" />
+    <ProjectReference Include="..\MESSAGING.Messages\MESSAGING.Messages.csproj" />
   </ItemGroup>
 
   <ItemGroup>

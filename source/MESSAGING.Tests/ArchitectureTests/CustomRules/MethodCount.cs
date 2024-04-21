@@ -17,7 +17,7 @@ namespace MESSAGING.Tests.ArchitectureTests.CustomRules
                 BindingFlags.Static |
                 BindingFlags.DeclaredOnly);
             var userMethods = methods.Where(x => !x.IsSpecialName && !x.IsVirtual && !x.CustomAttributes.Any()).ToList();
-            return !userMethods.Any();
+            return userMethods.Count == 0;
         }
     }
 }

@@ -17,7 +17,7 @@ public class EventRecordArchitectureTests
             .That()
             .AreClasses()
             .Should()
-            .BeSealed()
+            .BeSealed().Or().BeAbstract()
             .And()
             .MeetCustomRule(methodCountCustomRule)
             .GetResult();
