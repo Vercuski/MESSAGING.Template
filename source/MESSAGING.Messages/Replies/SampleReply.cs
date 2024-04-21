@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MESSAGING.Messages.Abstractions;
 
 namespace MESSAGING.Messages.Replies;
 
-public sealed class SampleReply
+public sealed record SampleReply : MessageBase
 {
     public string ReplyData { get; init; } = string.Empty;
 }

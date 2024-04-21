@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MESSAGING.Messages.Abstractions;
 
 namespace MESSAGING.Messages.Events;
 
-public sealed record SampleEvent
+public sealed record SampleEvent : MessageBase
 {
     public string EventData { get; init; } = string.Empty;
 }
